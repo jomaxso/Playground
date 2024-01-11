@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25DB43D3-1D17-4131-B205-E7DB9BFBD06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Blazor.Wasm", "src\Playground.Blazor.Wasm\Playground.Blazor.Wasm.csproj", "{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E} = {25DB43D3-1D17-4131-B205-E7DB9BFBD06A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
