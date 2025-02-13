@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.13">
+  <diagram name="Seite-1" id="QmuntSlvGMr34WS0qaS9">
+    <mxGraphModel dx="2807" dy="2656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-1" value="L1 Cache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;dashPattern=1 4;" edge="1" parent="1" source="bxZTMJIxuxMbtlBhMve6-2" target="bxZTMJIxuxMbtlBhMve6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-2" value="L2 Cache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bxZTMJIxuxMbtlBhMve6-4" target="bxZTMJIxuxMbtlBhMve6-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="-550" />
+              <mxPoint x="850" y="-630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bxZTMJIxuxMbtlBhMve6-4" target="bxZTMJIxuxMbtlBhMve6-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="-550" />
+              <mxPoint x="850" y="-470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-4" value="Cache Manager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-5" value="Datenquelle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bxZTMJIxuxMbtlBhMve6-5" target="bxZTMJIxuxMbtlBhMve6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;L2 Cache (Distributed Cache)&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Beschreibung:&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Verteilter Cache für Daten, die zwischen mehreren Instanzen geteilt werden.&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Technologie:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;IDistributedCache in .NET, oft implementiert mit Redis oder SQL Server.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Vorteile:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Skalierbar, Daten sind zwischen mehreren Servern konsistent.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-410" width="340" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-11" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;L1 Cache (In-Memory Cache)&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Beschreibung:&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Schneller, speicherinterner Cache für häufig genutzte Daten.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Technologie:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;MemoryCache oder IMemoryCache in .NET.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Vorteile:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Sehr schnelle Zugriffszeiten, ideal für kurzfristige Daten.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-910" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-12" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Cache Manager (HybridCache)&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Beschreibung:&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Verwaltung der Cache-Hierarchie und Entscheidung, welche Daten in L1 oder L2 gespeichert werden. Stamp&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Technologie:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;Benutzerdefinierte Logik in .NET, die beide Caches koordiniert. Seit .NET 9 mit der Abstraction &quot;HaybridCache&quot; mit Microsoft (preview) oder mit FusionCache in .NET&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Zusätzliche Funktionen:&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stamped Protection: Schutzmechanismus, der sicherstellt, dass nur einmalig, gültige Daten im Cache gespeichert werden.&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Tag-Based Validation: Ermöglicht die Invalidierung von Cache-Einträgen basierend auf Tags, um gezielt Daten zu aktualisieren.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-410" width="340" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Datenquelle&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Beschreibung:&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Ursprüngliche Datenquelle, z.B. eine Datenbank oder ein Webservice.&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Technologie:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;Entity Framework, Dapper, HTTP-Clients etc.&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Funktion:&lt;/b&gt;&lt;/font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;Wird aufgerufen, wenn der Cache leer ist, um die benötigten Daten zu laden.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;flipV=1;flipH=1;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-920" width="340" height="250" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;a href=&quot;https://learn.microsoft.com/en-us/aspnet/core/performance/caching/hybrid?view=aspnetcore-9.0&quot;&gt;HybridCache library in ASP.NET Core&lt;/a&gt;" link="&lt;a href=&quot;https://learn.microsoft.com/en-us/aspnet/core/performance/caching/hybrid?view=aspnetcore-9.0&quot;&gt;HybridCache library in ASP.NET Core | Microsoft Learn&lt;/a&gt;" id="bxZTMJIxuxMbtlBhMve6-15">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="120" y="-1070" width="450" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="bxZTMJIxuxMbtlBhMve6-17" value="Microsoft.Extensions.Caching.Hybrid" style="text;whiteSpace=wrap;fontStyle=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-1110" width="460" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -4,6 +4,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25DB43D3-1D1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Blazor.Wasm", "src\Playground.Blazor.Wasm\Playground.Blazor.Wasm.csproj", "{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{BFB0A840-A409-4927-860B-EF7AF1582191}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HybridCache", "HybridCache", "{E65687D9-C9A3-4FFF-B2F8-0601D85775F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.HybridCache", "demo\HybridCache\Demo.HybridCache\Demo.HybridCache.csproj", "{B6EF99A6-20CA-48A3-9C24-9BCFAE18577D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -11,11 +17,17 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E} = {25DB43D3-1D17-4131-B205-E7DB9BFBD06A}
+		{E65687D9-C9A3-4FFF-B2F8-0601D85775F9} = {BFB0A840-A409-4927-860B-EF7AF1582191}
+		{B6EF99A6-20CA-48A3-9C24-9BCFAE18577D} = {E65687D9-C9A3-4FFF-B2F8-0601D85775F9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA1545D-6E41-4BBC-AFAB-307F7E86850E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EF99A6-20CA-48A3-9C24-9BCFAE18577D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EF99A6-20CA-48A3-9C24-9BCFAE18577D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EF99A6-20CA-48A3-9C24-9BCFAE18577D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EF99A6-20CA-48A3-9C24-9BCFAE18577D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
