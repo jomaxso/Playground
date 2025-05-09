@@ -11,9 +11,10 @@ public static partial class Endpoints
             return books;
         });
 
-        endpoints.MapGet("books/{number:int}", (Database database, int number) =>
+        endpoints.MapPost("books", (Database database) =>
         {
-            database.AddBook(new Book(Guid.CreateVersion7(), $"NewBook {number}"));
+            var book = new Book(Guid.CreateVersion7(), $"NewBook {Guid.NewGuid()}");
+            database.AddBook(book);
         });
     }
 }

@@ -6,27 +6,26 @@ public static partial class Endpoints
 {
     public static void MapEndpointsWithCache(this IEndpointRouteBuilder endpoints)
     {
-        var cacheGroup = endpoints.MapGroup("cached");
-        
-        cacheGroup.MapGet("books", async (HybridCache cache, Database database) =>
+        endpoints.MapGet("books", async (HybridCache cache, Database database) =>
         {
-            var books = await cache
-                .GetOrCreateAsync(
-                    "books", 
-                    database,
-                    static async (db, ct) => await db.GetBooksAsync(),
-                    tags: ["books"]);
+            var books = await cache.GetOrCreateAsync(
+                "books", 
+                database,
+                static async (db, ct) => await db.GetBooksAsync(),
+                tags: ["books"]);
 
             return books;
         });
 
-        cacheGroup.MapGet("books/{number:int}", async (HybridCache cache, Database database, int number) =>
+        endpoints.MapPost("books", async (HybridCache cache, Database database) =>
         {
-            database.AddBook(new Book(Guid.CreateVersion7(), $"NewBook {number}"));
+            var book = new Book(Guid.CreateVersion7(), $"NewBook {Guid.NewGuid()}");
+            database.AddBook(book);
+
             await cache.RemoveByTagAsync("books");
         });
 
-        cacheGroup.MapGet("books/reset", async (HybridCache cache) =>
+        endpoints.MapPut("books", async (HybridCache cache) =>
         {
             await cache.RemoveByTagAsync("books");
         });

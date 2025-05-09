@@ -1,0 +1,8 @@
+### Get all books
+GET http://localhost:5226/books
+
+### Create a new book
+POST http://localhost:5226/books
+
+### Invalidate the cache
+PUT http://localhost:5226/books
