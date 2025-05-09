@@ -2,6 +2,8 @@ using Microsoft.Extensions.Caching.Distributed;
 
 namespace Demo.HybridCache;
 
+// builder.Services.AddSingleton<IDistributedCache, ExternalCache>();
+
 public class ExternalCache : IDistributedCache
 {
     public byte[]? Get(string key)

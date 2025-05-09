@@ -4,9 +4,7 @@ public class Database
 {
     private readonly List<Book> _books = Enumerable
         .Range(1, 10)
-        .Select(x => new Book(
-            Guid.CreateVersion7(),
-            $"Book {x}" ))
+        .Select(x => new Book(Guid.CreateVersion7(), $"Book {x}"))
         .ToList();
 
     public async Task<IReadOnlyList<Book>> GetBooksAsync()

@@ -1,5 +1,3 @@
 ﻿namespace Demo.HybridCache;
 
-public record Book(
-    Guid Id,
-    string Name);
+public record Book(Guid Id, string Name);
