@@ -1,13 +1,32 @@
 using Demo.HybridCache;
+using Microsoft.Extensions.Caching.Hybrid;
+using Scalar.AspNetCore;
 
-var builder = WebApplication.CreateBuilder();
+var builder = WebApplication.CreateBuilder()
+    .AddServiceDefaults();
 
-// builder.Services.AddHybridCache();
+builder.Services.AddOpenApi();
+
+builder.AddRedisDistributedCache("redis");
+builder.Services.AddHybridCache(options =>
+{
+    options.DefaultEntryOptions = new HybridCacheEntryOptions
+    {
+        // Expiration = TimeSpan.FromSeconds(20),
+        // LocalCacheExpiration = TimeSpan.FromSeconds(0),
+        // Flags = HybridCacheEntryFlags.
+    };
+});
+
 builder.Services.AddSingleton<Database>();
 
-var app = builder.Build();
+var app = builder.Build()
+    .MapDefaultEndpoints();
 
-app.MapEndpointsWithoutCache();
-// app.MapEndpointsWithCache();
+app.MapOpenApi();
+app.MapScalarApiReference();
+
+//app.MapEndpointsWithoutCache();
+app.MapEndpointsWithCache();
 
 await app.RunAsync();
